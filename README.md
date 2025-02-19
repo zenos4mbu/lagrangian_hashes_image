@@ -36,10 +36,10 @@ We provide several Bash scripts to quickly evaluate the performance of our model
 - **grid_lr_weight**: Learning rate for all parameters within the codebook.
 - **codebook_bitwidth**: Number of bitwidths used to represent the image (applied exponentially).
 
-To run an evaluation, simply execute the desired Bash script. For example:
+To run an evaluation, execute the following:
 
 ```
-./train_image_pytorch.sh
+WISP_HEADLESS=1 python app/image/main_image2.py --config app/image/configs/image_splash.yaml --dataset.dataset-path "path to image"
 ```
 
 ## Citation
